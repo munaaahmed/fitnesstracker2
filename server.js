@@ -16,7 +16,7 @@ app.use(express.static("public"));
 
 mongoose.connect("mongodb+srv://fitnesstracker:1234@cluster0.jhsu5.mongodb.net/fitnesstracker?retryWrites=true&w=majority", {
   useNewUrlParser: true,
-  useFindAndModify: false
+  useUnifiedTopology: true
 });
 
 // routes
